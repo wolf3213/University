@@ -1,0 +1,23 @@
+program A
+	implicit none
+	character(len=20)=slowo
+	integer::i,k=0
+	print*,"Podaj slowa" 
+	read*,slowo
+	
+	print*,liczymy(slowo) 
+
+	real function(x) liczymy result p
+	implicit none  
+	character(len=20), intent(in)::x
+	integer, intent(in)::k
+	do i=1,20
+	if(x(i:i)="a" .OR. x(i:i)="A")
+		k=k+1
+	end if 
+	end do
+	
+	p=k	
+	end function liczymy 
+		
+ 	end 
